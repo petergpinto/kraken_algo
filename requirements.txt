@@ -3,3 +3,4 @@ krakenex
 pykrakenapi
 currency-viewer
 numpy
+mysql-connector-python
