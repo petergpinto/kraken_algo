@@ -1,0 +1,16 @@
+[Unit]
+Description=Kraken API python script to collect OHLC data for all trading pairs
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+User=root
+WorkingDirectory=/home/peter/kraken
+ExecStart=/home/peter/kraken/.virtualenv/krakenex/bin/python /home/peter/kraken/get-ohlc-data.py
+
+
+[Install]
+WantedBy=multi-user.target
