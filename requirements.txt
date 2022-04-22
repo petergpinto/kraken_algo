@@ -1,0 +1,5 @@
+python-dotenv
+krakenex
+pykrakenapi
+currency-viewer
+numpy
