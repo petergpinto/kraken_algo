@@ -31,3 +31,16 @@ Crontab entry for updating tradable pairs daily
 ```cron
 0   1 * * *     /home/peter/kraken/.virtualenv/krakenex/bin/python /home/peter/kraken/get-all-tradable-pairs.py
 ```
+
+
+Simple moving average SQL
+```sql
+SELECT a.timestamp, a.open, 
+	Round( 
+		( select SUM(b.open) / count(b.open) 
+		FROM ohlc_data as b WHERE TIMEDIFF(a.timestamp, b.timestamp) 
+		BETWEEN 0 AND 10
+		), 2) as '10MinuteMovingAvg' 
+	FROM ohlc_data as a 
+	order by a.timestamp;
+```
