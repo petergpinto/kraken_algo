@@ -25,3 +25,9 @@ OR
 ```bash
 source .virtualenv/krakenex/bin/activate
 ```
+
+
+Crontab entry for updating tradable pairs daily
+```cron
+0   1 * * *     /home/peter/kraken/.virtualenv/krakenex/bin/python /home/peter/kraken/get-all-tradable-pairs.py
+```
