@@ -18,7 +18,7 @@ cursor = cnx.cursor()
 
 # configure api
 k = krakenex.API()
-k.load_key('combined.key')
+k.load_key(os.environ['KRAKEN_API_KEY'])
 
 # prepare request
 req_data = {'docalcs': 'true'}
