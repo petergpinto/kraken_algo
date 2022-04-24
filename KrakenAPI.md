@@ -4,7 +4,7 @@
 
 Can be used to retrieve a list of all the available currency pairs for trading
 
-```yaml
+```javascript
 {
 	'base': "Base currency for the AssetPair",
 	'altname': "Friendly name for the AssetPair",
@@ -16,7 +16,7 @@ Can be used to retrieve a list of all the available currency pairs for trading
 
 Can be used to retrieve a list of all of the available currencies
 
-```yaml
+```javascript
 { 
 	'aclass': "The class of the Asset, ['currency', 'forex']",
 	'altname': "Friendly name for the Asset",
