@@ -6,9 +6,9 @@ Can be used to retrieve a list of all the available currency pairs for trading
 
 ```json
 {
-	'base': "Base currency for the AssetPair",
-	'altname': "Friendly name for the AssetPair",
-	'ordermin': "Minimum amount of the (base)? that can be traded in the pair"
+	base: "Base currency for the AssetPair",
+	altname: "Friendly name for the AssetPair",
+	ordermin: "Minimum amount of the (base)? that can be traded in the pair"
 }
 ```
 
