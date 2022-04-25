@@ -44,3 +44,16 @@ SELECT a.timestamp, a.open,
 	FROM ohlc_data as a 
 	order by a.timestamp;
 ```
+
+
+
+## Currency codes meaning
+XBT is BTC
+
+XXBTZUSD is a currency pair that represents BTC/USD
+
+X denotes crypto
+Z denotes cash
+
+https://support.kraken.com/hc/en-us/articles/360001185506-How-to-interpret-asset-codes
+https://support.kraken.com/hc/en-us/articles/360001206766-Bitcoin-currency-code-XBT-vs-BTC
