@@ -54,7 +54,7 @@ tradable = cursor.fetchall()
 
 while True:
 	print("Starting OHLC data collection...")
-	for id, pair, base, altname, orderMin in tradable:
+	for id, pair, base, altname, orderMin, doTrade in tradable:
 		cursor.execute(latest_timestamp, (id, ) )
 		timestamp = cursor.fetchall()[0][0].timestamp()
 		req_data = {'docalcs': 'true', 'pair':pair, 'interval':oneMinute, 'since' : int(timestamp) }
